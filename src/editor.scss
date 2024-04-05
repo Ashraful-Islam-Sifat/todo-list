@@ -1,0 +1,31 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-todo-list {
+	ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+            margin-bottom: 16px;
+
+            label{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .addtodo-form {
+        display: flex;
+        margin-top: 30px;
+        input{
+            height: 36px;
+        }
+        button {
+            margin-left: 20px;
+        }
+    }
+}
