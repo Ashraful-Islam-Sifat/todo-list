@@ -18,7 +18,7 @@ export default function Edit() {
 
 	const actions = useDispatch('block-course/todos');
 	const addTodo = actions && actions.addTodo;
-	const toggleTodo = actions && actions.toggleTodo
+	const toggleTodo = actions && actions.toggleTodo;
 
 	return (
 		<div { ...useBlockProps() }>
@@ -35,6 +35,7 @@ export default function Edit() {
 				    		<li key={todo.id}>
 				    			<CheckboxControl 
 				    			    label= {todo.title}
+									disabled={todo.loading}
 				    				checked= {todo.completed}
 				    				onChange={()=> {
 										if(toggleTodo){

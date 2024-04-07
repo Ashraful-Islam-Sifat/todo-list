@@ -49,6 +49,7 @@ function Edit() {
     key: todo.id
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.CheckboxControl, {
     label: todo.title,
+    disabled: todo.loading,
     checked: todo.completed,
     onChange: () => {
       if (toggleTodo) {
